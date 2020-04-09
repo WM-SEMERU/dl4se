@@ -1,0 +1,345 @@
+{
+  "type" : "CHART",
+  "name" : null,
+  "generalConfiguration" : {
+    "inverted" : false,
+    "optimizedForPrinting" : false,
+    "timeZone" : null,
+    "width" : null,
+    "height" : null,
+    "displayType" : "POLAR",
+    "zoomType" : "XY",
+    "style" : {
+      "backgroundColor" : null,
+      "plotBackgroundColor" : null
+    }
+  },
+  "titleConfiguration" : {
+    "enabled" : true,
+    "title" : "",
+    "subTitle" : null,
+    "titleStyle" : {
+      "color" : null,
+      "fontSize" : 14,
+      "bold" : false,
+      "italic" : false
+    },
+    "subTitleStyle" : {
+      "color" : null,
+      "fontSize" : null,
+      "bold" : false,
+      "italic" : false
+    },
+    "horizontalAlignment" : "CENTER"
+  },
+  "tooltipConfiguration" : {
+    "enabled" : true,
+    "shared" : false,
+    "valuePrefix" : null,
+    "valueSuffix" : null,
+    "valueDecimals" : null
+  },
+  "legendConfiguration" : {
+    "enabled" : true,
+    "title" : null,
+    "layout" : "HORIZONTAL",
+    "horizontalAlignment" : "CENTER",
+    "verticalAlignment" : "BOTTOM",
+    "style" : {
+      "color" : null,
+      "fontSize" : null,
+      "bold" : true,
+      "italic" : false
+    }
+  },
+  "colorAxisConfiguration" : {
+    "id" : "color1",
+    "minValue" : null,
+    "maxValue" : null,
+    "logarithmic" : false,
+    "coloringType" : "GRADIENT",
+    "colorBins" : [ {
+      "from" : null,
+      "to" : 0.0,
+      "color" : "rgba(103,143,248,1.0)",
+      "name" : null
+    }, {
+      "from" : 0.0,
+      "to" : null,
+      "color" : "rgba(239,64,64,1.0)",
+      "name" : null
+    } ],
+    "colorStops" : [ {
+      "point" : 0.0,
+      "color" : "rgba(103,143,248,1.0)"
+    }, {
+      "point" : 0.5,
+      "color" : "rgba(247,247,164,1.0)"
+    }, {
+      "point" : 1.0,
+      "color" : "rgba(239,64,64,1.0)"
+    } ],
+    "labelConfiguration" : {
+      "enabled" : true,
+      "format" : null,
+      "labelInterval" : 0,
+      "style" : {
+        "color" : null,
+        "fontSize" : null,
+        "bold" : false,
+        "italic" : false
+      }
+    }
+  },
+  "plotConfigurations" : [ {
+    "columns" : [ "Venue" ],
+    "plotType" : "bar",
+    "stackingType" : "STACK_VALUES",
+    "additionalColumns" : {
+      "packedbubble_name" : "Venue",
+      "treemap_color" : null,
+      "color" : "Venue",
+      "treemap_name" : null,
+      "treemap_group" : null,
+      "sunburst_level1" : null,
+      "3d_y_axis_column" : "Architectures",
+      "color_group" : "Learning Type",
+      "group" : "Venue"
+    },
+    "aggregationConfiguration" : {
+      "enabled" : true,
+      "groupByColumns" : [ "Venue" ],
+      "aggregationFunction" : "COUNT",
+      "aggregationParameter" : null
+    },
+    "typeSpecificConfiguration" : {
+      "configuration" : {
+        "jitter_amount" : 0,
+        "matrix_size" : 300
+      }
+    },
+    "styleConfiguration" : {
+      "visible" : true,
+      "markersEnabled" : false,
+      "showInLegend" : true,
+      "interactive" : true,
+      "colors" : null,
+      "missingColor" : null,
+      "lineWidth" : 2.0,
+      "areaFillOpacity" : 0.7,
+      "markerSize" : 4.0,
+      "markerFillOpacity" : 0.5,
+      "lineType" : "SOLID",
+      "markerShape" : "CIRCLE",
+      "dataLabelConfiguration" : {
+        "enabled" : false,
+        "format" : null,
+        "style" : {
+          "color" : null,
+          "fontSize" : null,
+          "bold" : false,
+          "italic" : false
+        },
+        "position" : {
+          "horizontalAlignment" : null,
+          "verticalAlignment" : null,
+          "anchorPoint" : null,
+          "rotation" : null,
+          "overlapAllowed" : false,
+          "xoffset" : 0,
+          "yoffset" : 0
+        },
+        "filter" : {
+          "enabled" : false,
+          "filterOperator" : "GREATER_THAN",
+          "filterProperty" : "y",
+          "filterValue" : null
+        }
+      }
+    },
+    "tooltipConfiguration" : {
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueDecimals" : null
+    },
+    "yaxisId" : "y1"
+  }, {
+    "columns" : [ "Year published" ],
+    "plotType" : "spline",
+    "stackingType" : "STACK_VALUES",
+    "additionalColumns" : {
+      "color_group" : "Year published"
+    },
+    "aggregationConfiguration" : {
+      "enabled" : true,
+      "groupByColumns" : [ "Venue" ],
+      "aggregationFunction" : "COUNT",
+      "aggregationParameter" : null
+    },
+    "typeSpecificConfiguration" : {
+      "configuration" : {
+        "regression_interpolation" : "linear",
+        "jitter_amount" : 2
+      }
+    },
+    "styleConfiguration" : {
+      "visible" : true,
+      "markersEnabled" : true,
+      "showInLegend" : true,
+      "interactive" : true,
+      "colors" : null,
+      "missingColor" : null,
+      "lineWidth" : 2.0,
+      "areaFillOpacity" : 0.7,
+      "markerSize" : 4.0,
+      "markerFillOpacity" : 0.5,
+      "lineType" : "SHORT_DOT",
+      "markerShape" : "CIRCLE",
+      "dataLabelConfiguration" : {
+        "enabled" : false,
+        "format" : null,
+        "style" : {
+          "color" : null,
+          "fontSize" : null,
+          "bold" : false,
+          "italic" : false
+        },
+        "position" : {
+          "horizontalAlignment" : null,
+          "verticalAlignment" : null,
+          "anchorPoint" : null,
+          "rotation" : null,
+          "overlapAllowed" : false,
+          "xoffset" : 0,
+          "yoffset" : 0
+        },
+        "filter" : {
+          "enabled" : false,
+          "filterOperator" : "GREATER_THAN",
+          "filterProperty" : "y",
+          "filterValue" : null
+        }
+      }
+    },
+    "tooltipConfiguration" : {
+      "valuePrefix" : null,
+      "valueSuffix" : null,
+      "valueDecimals" : null
+    },
+    "yaxisId" : "y1"
+  } ],
+  "mapConfiguration" : {
+    "mapKey" : "custom/world",
+    "navigationAllowed" : true,
+    "borderWidth" : 1.0
+  },
+  "zaxisConfiguration" : {
+    "id" : "z1",
+    "minValue" : null,
+    "maxValue" : null,
+    "logarithmic" : false,
+    "plotLines" : [ ],
+    "styleConfiguration" : {
+      "title" : null,
+      "titleStyle" : {
+        "color" : null,
+        "fontSize" : null,
+        "bold" : false,
+        "italic" : false
+      },
+      "opposite" : false,
+      "reversed" : false,
+      "decimalsAllowed" : true,
+      "visible" : true,
+      "tickInterval" : null,
+      "axisColor" : null,
+      "gridLineType" : "SOLID",
+      "gridLineColor" : null,
+      "gridLineWidth" : null,
+      "labelConfiguration" : {
+        "enabled" : true,
+        "format" : null,
+        "labelInterval" : 0,
+        "style" : {
+          "color" : null,
+          "fontSize" : null,
+          "bold" : false,
+          "italic" : false
+        }
+      }
+    }
+  },
+  "yaxisConfigurations" : [ {
+    "id" : "y1",
+    "minValue" : null,
+    "maxValue" : null,
+    "logarithmic" : false,
+    "plotLines" : [ ],
+    "styleConfiguration" : {
+      "title" : null,
+      "titleStyle" : {
+        "color" : null,
+        "fontSize" : null,
+        "bold" : false,
+        "italic" : false
+      },
+      "opposite" : false,
+      "reversed" : false,
+      "decimalsAllowed" : true,
+      "visible" : true,
+      "tickInterval" : null,
+      "axisColor" : null,
+      "gridLineType" : "SOLID",
+      "gridLineColor" : null,
+      "gridLineWidth" : null,
+      "labelConfiguration" : {
+        "enabled" : true,
+        "format" : null,
+        "labelInterval" : 0,
+        "style" : {
+          "color" : null,
+          "fontSize" : null,
+          "bold" : false,
+          "italic" : false
+        }
+      }
+    }
+  } ],
+  "xaxisConfiguration" : {
+    "id" : "x1",
+    "minValue" : null,
+    "maxValue" : null,
+    "logarithmic" : false,
+    "plotLines" : [ ],
+    "column" : "Venue",
+    "styleConfiguration" : {
+      "title" : null,
+      "titleStyle" : {
+        "color" : null,
+        "fontSize" : null,
+        "bold" : false,
+        "italic" : false
+      },
+      "opposite" : false,
+      "reversed" : false,
+      "decimalsAllowed" : true,
+      "visible" : true,
+      "tickInterval" : null,
+      "axisColor" : null,
+      "gridLineType" : "SOLID",
+      "gridLineColor" : null,
+      "gridLineWidth" : null,
+      "labelConfiguration" : {
+        "enabled" : true,
+        "format" : null,
+        "labelInterval" : 0,
+        "style" : {
+          "color" : null,
+          "fontSize" : null,
+          "bold" : false,
+          "italic" : false
+        }
+      }
+    }
+  }
+}

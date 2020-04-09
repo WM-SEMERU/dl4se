@@ -1,2 +1,18 @@
-# dl4se
-A Systematic Literature Review of Deep Learning in Software Engineering
+## dl4se
+#A Systematic Literature Review of Deep Learning in Software Engineering
+
+This list corresponds to a filtered literature search in Deep Learning Approaches used for Software Engieering Automation. *Last update:* April 9th 2020; *Maintaned by* @danaderp
+
+| Title | Authors | Venue | Year | 
+| --- | --- | --- | --- |
+| [Combining Deep Learning with Information Retrieval to Localize Buggy Files for Bug Reports] (https://dl.acm.org/doi/10.1145/2786805.2786849) | Allamanis, et al. | ASE | 2015 |
+
+##Data Mining Analysis
+
+###Data Exploration and Description
+
+###Correlations and Mutual Information
+
+###Association Rules
+
+###Clustering

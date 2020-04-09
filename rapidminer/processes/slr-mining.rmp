@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.6.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.6.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="false" class="retrieve" compatibility="9.6.000" expanded="true" height="68" name="Retrieve DL4SE-Dataset" width="90" x="45" y="238">
+        <parameter key="repository_entry" value="DL4SE-Dataset"/>
+      </operator>
+      <operator activated="false" class="subprocess" compatibility="9.6.000" expanded="true" height="82" name="Experimental" width="90" x="514" y="697">
+        <process expanded="true">
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes (3)" width="90" x="45" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Title"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes (2)" width="90" x="179" y="34">
+            <parameter key="attribute_filter_type" value="value_type"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="multiply" compatibility="9.6.000" expanded="true" height="103" name="Multiply (2)" width="90" x="313" y="34"/>
+          <operator activated="true" class="nominal_to_numerical" compatibility="9.6.000" expanded="true" height="103" name="Nominal to Numerical (2)" width="90" x="447" y="34">
+            <parameter key="return_preprocessing_model" value="false"/>
+            <parameter key="create_view" value="false"/>
+            <parameter key="attribute_filter_type" value="all"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="coding_type" value="dummy coding"/>
+            <parameter key="use_comparison_groups" value="false"/>
+            <list key="comparison_groups"/>
+            <parameter key="unexpected_value_handling" value="all 0 and warning"/>
+            <parameter key="use_underscore_in_name" value="false"/>
+          </operator>
+          <operator activated="true" class="self_organizing_map" compatibility="9.6.000" expanded="true" height="103" name="SOM (2)" width="90" x="581" y="34">
+            <parameter key="return_preprocessing_model" value="false"/>
+            <parameter key="number_of_dimensions" value="3"/>
+            <parameter key="net_size" value="10"/>
+            <parameter key="training_rounds" value="30"/>
+            <parameter key="learning_rate_start" value="0.8"/>
+            <parameter key="learning_rate_end" value="0.01"/>
+            <parameter key="adaption_radius_start" value="10.0"/>
+            <parameter key="adaption_radius_end" value="1.0"/>
+          </operator>
+          <connect from_port="in 1" to_op="Select Attributes (3)" to_port="example set input"/>
+          <connect from_op="Select Attributes (3)" from_port="example set output" to_op="Select Attributes (2)" to_port="example set input"/>
+          <connect from_op="Select Attributes (2)" from_port="example set output" to_op="Multiply (2)" to_port="input"/>
+          <connect from_op="Multiply (2)" from_port="output 1" to_op="Nominal to Numerical (2)" to_port="example set input"/>
+          <connect from_op="Nominal to Numerical (2)" from_port="example set output" to_op="SOM (2)" to_port="example set input"/>
+          <connect from_op="SOM (2)" from_port="example set output" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.6.000" expanded="true" height="68" name="Retrieve DL4SE2" width="90" x="45" y="340">
+        <parameter key="repository_entry" value="DL4SE2"/>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="9.6.000" expanded="true" height="166" name="Multiply" width="90" x="313" y="238"/>
+      <operator activated="true" class="subprocess" compatibility="9.6.000" expanded="true" height="124" name="Clustering Analysis" width="90" x="514" y="544">
+        <process expanded="true">
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes (6)" width="90" x="45" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Title"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes (7)" width="90" x="179" y="34">
+            <parameter key="attribute_filter_type" value="value_type"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="multiply" compatibility="9.6.000" expanded="true" height="103" name="Multiply (4)" width="90" x="313" y="34"/>
+          <operator activated="true" class="nominal_to_numerical" compatibility="9.6.000" expanded="true" height="103" name="Nominal to Numerical" width="90" x="447" y="34">
+            <parameter key="return_preprocessing_model" value="false"/>
+            <parameter key="create_view" value="false"/>
+            <parameter key="attribute_filter_type" value="all"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="coding_type" value="dummy coding"/>
+            <parameter key="use_comparison_groups" value="false"/>
+            <list key="comparison_groups"/>
+            <parameter key="unexpected_value_handling" value="all 0 and warning"/>
+            <parameter key="use_underscore_in_name" value="false"/>
+          </operator>
+          <operator activated="true" class="principal_component_analysis" compatibility="9.6.000" expanded="true" height="103" name="PCA" width="90" x="581" y="34">
+            <parameter key="dimensionality_reduction" value="fixed number"/>
+            <parameter key="variance_threshold" value="0.95"/>
+            <parameter key="number_of_components" value="2"/>
+          </operator>
+          <operator activated="true" class="k_medoids" compatibility="9.6.000" expanded="true" height="82" name="Clustering (3)" width="90" x="715" y="34">
+            <parameter key="add_cluster_attribute" value="true"/>
+            <parameter key="add_as_label" value="false"/>
+            <parameter key="remove_unlabeled" value="false"/>
+            <parameter key="k" value="4"/>
+            <parameter key="max_runs" value="50"/>
+            <parameter key="max_optimization_steps" value="150"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <parameter key="measure_types" value="NumericalMeasures"/>
+            <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+            <parameter key="nominal_measure" value="NominalDistance"/>
+            <parameter key="numerical_measure" value="EuclideanDistance"/>
+            <parameter key="divergence" value="GeneralizedIDivergence"/>
+            <parameter key="kernel_type" value="radial"/>
+            <parameter key="kernel_gamma" value="1.0"/>
+            <parameter key="kernel_sigma1" value="1.0"/>
+            <parameter key="kernel_sigma2" value="0.0"/>
+            <parameter key="kernel_sigma3" value="2.0"/>
+            <parameter key="kernel_degree" value="3.0"/>
+            <parameter key="kernel_shift" value="1.0"/>
+            <parameter key="kernel_a" value="1.0"/>
+            <parameter key="kernel_b" value="0.0"/>
+          </operator>
+          <operator activated="true" class="model_simulator:cluster_model_visualizer" compatibility="9.6.000" expanded="true" height="103" name="Cluster Model Visualizer (2)" width="90" x="916" y="34"/>
+          <operator activated="true" class="k_medoids" compatibility="9.6.000" expanded="true" height="82" name="Clustering" width="90" x="447" y="187">
+            <parameter key="add_cluster_attribute" value="true"/>
+            <parameter key="add_as_label" value="false"/>
+            <parameter key="remove_unlabeled" value="false"/>
+            <parameter key="k" value="4"/>
+            <parameter key="max_runs" value="40"/>
+            <parameter key="max_optimization_steps" value="170"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <parameter key="measure_types" value="NominalMeasures"/>
+            <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+            <parameter key="nominal_measure" value="KulczynskiSimilarity"/>
+            <parameter key="numerical_measure" value="EuclideanDistance"/>
+            <parameter key="divergence" value="GeneralizedIDivergence"/>
+            <parameter key="kernel_type" value="radial"/>
+            <parameter key="kernel_gamma" value="1.0"/>
+            <parameter key="kernel_sigma1" value="1.0"/>
+            <parameter key="kernel_sigma2" value="0.0"/>
+            <parameter key="kernel_sigma3" value="2.0"/>
+            <parameter key="kernel_degree" value="3.0"/>
+            <parameter key="kernel_shift" value="1.0"/>
+            <parameter key="kernel_a" value="1.0"/>
+            <parameter key="kernel_b" value="0.0"/>
+          </operator>
+          <operator activated="true" class="extract_prototypes" compatibility="9.6.000" expanded="true" height="82" name="Extract Cluster Prototypes" width="90" x="916" y="187"/>
+          <connect from_port="in 1" to_op="Select Attributes (6)" to_port="example set input"/>
+          <connect from_op="Select Attributes (6)" from_port="example set output" to_op="Select Attributes (7)" to_port="example set input"/>
+          <connect from_op="Select Attributes (7)" from_port="example set output" to_op="Multiply (4)" to_port="input"/>
+          <connect from_op="Multiply (4)" from_port="output 1" to_op="Nominal to Numerical" to_port="example set input"/>
+          <connect from_op="Multiply (4)" from_port="output 2" to_op="Clustering" to_port="example set"/>
+          <connect from_op="Nominal to Numerical" from_port="example set output" to_op="PCA" to_port="example set input"/>
+          <connect from_op="PCA" from_port="example set output" to_op="Clustering (3)" to_port="example set"/>
+          <connect from_op="Clustering (3)" from_port="cluster model" to_op="Cluster Model Visualizer (2)" to_port="model"/>
+          <connect from_op="Clustering (3)" from_port="clustered set" to_op="Cluster Model Visualizer (2)" to_port="clustered data"/>
+          <connect from_op="Cluster Model Visualizer (2)" from_port="visualizer output" to_port="out 1"/>
+          <connect from_op="Clustering" from_port="cluster model" to_op="Extract Cluster Prototypes" to_port="model"/>
+          <connect from_op="Extract Cluster Prototypes" from_port="example set" to_port="out 2"/>
+          <connect from_op="Extract Cluster Prototypes" from_port="model" to_port="out 3"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+          <portSpacing port="sink_out 3" spacing="0"/>
+          <portSpacing port="sink_out 4" spacing="0"/>
+          <description align="center" color="yellow" colored="false" height="108" resized="true" width="611" x="414" y="178">Explainable</description>
+        </process>
+      </operator>
+      <operator activated="true" class="subprocess" compatibility="9.6.000" expanded="true" height="82" name="Association Rules" width="90" x="514" y="391">
+        <process expanded="true">
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes (4)" width="90" x="112" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Title"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes (5)" width="90" x="246" y="34">
+            <parameter key="attribute_filter_type" value="value_type"/>
+            <parameter key="attribute" value=""/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="concurrency:fp_growth" compatibility="9.6.000" expanded="true" height="82" name="FP-Growth" width="90" x="380" y="34">
+            <parameter key="input_format" value="items in separate columns"/>
+            <parameter key="item_separators" value="|"/>
+            <parameter key="use_quotes" value="false"/>
+            <parameter key="quotes_character" value="&quot;"/>
+            <parameter key="escape_character" value="\"/>
+            <parameter key="trim_item_names" value="true"/>
+            <parameter key="min_requirement" value="support"/>
+            <parameter key="min_support" value="0.95"/>
+            <parameter key="min_frequency" value="100"/>
+            <parameter key="min_items_per_itemset" value="1"/>
+            <parameter key="max_items_per_itemset" value="0"/>
+            <parameter key="max_number_of_itemsets" value="1000000"/>
+            <parameter key="find_min_number_of_itemsets" value="true"/>
+            <parameter key="min_number_of_itemsets" value="100"/>
+            <parameter key="max_number_of_retries" value="15"/>
+            <parameter key="requirement_decrease_factor" value="0.9"/>
+            <enumeration key="must_contain_list"/>
+          </operator>
+          <operator activated="true" class="create_association_rules" compatibility="9.6.000" expanded="true" height="82" name="Create Association Rules" width="90" x="581" y="34">
+            <parameter key="criterion" value="confidence"/>
+            <parameter key="min_confidence" value="0.8"/>
+            <parameter key="min_criterion_value" value="0.8"/>
+            <parameter key="gain_theta" value="2.0"/>
+            <parameter key="laplace_k" value="1.0"/>
+          </operator>
+          <connect from_port="in 1" to_op="Select Attributes (4)" to_port="example set input"/>
+          <connect from_op="Select Attributes (4)" from_port="example set output" to_op="Select Attributes (5)" to_port="example set input"/>
+          <connect from_op="Select Attributes (5)" from_port="example set output" to_op="FP-Growth" to_port="example set"/>
+          <connect from_op="FP-Growth" from_port="frequent sets" to_op="Create Association Rules" to_port="item sets"/>
+          <connect from_op="Create Association Rules" from_port="rules" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="subprocess" compatibility="9.6.000" expanded="true" height="103" name="Quality Measures and Statistics" width="90" x="514" y="34">
+        <process expanded="true">
+          <operator activated="true" class="multiply" compatibility="9.6.000" expanded="true" height="103" name="Multiply (3)" width="90" x="112" y="34"/>
+          <operator activated="true" class="model_simulator:quality_measures" compatibility="9.6.000" expanded="true" height="68" name="Quality Measures" width="90" x="380" y="136"/>
+          <operator activated="true" class="model_simulator:data_statistics" compatibility="9.6.000" expanded="true" height="82" name="Statistics" width="90" x="380" y="34"/>
+          <connect from_port="in 1" to_op="Multiply (3)" to_port="input"/>
+          <connect from_op="Multiply (3)" from_port="output 1" to_op="Statistics" to_port="example set"/>
+          <connect from_op="Multiply (3)" from_port="output 2" to_op="Quality Measures" to_port="example set"/>
+          <connect from_op="Quality Measures" from_port="example set" to_port="out 2"/>
+          <connect from_op="Statistics" from_port="statistics" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+          <portSpacing port="sink_out 3" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="subprocess" compatibility="9.6.000" expanded="true" height="103" name="Correlation Analysis" width="90" x="514" y="187">
+        <process expanded="true">
+          <operator activated="true" class="select_attributes" compatibility="9.6.000" expanded="true" height="82" name="Select Attributes" width="90" x="112" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Title"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="attribute_value"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="time"/>
+            <parameter key="block_type" value="attribute_block"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="value_matrix_row_start"/>
+            <parameter key="invert_selection" value="true"/>
+            <parameter key="include_special_attributes" value="false"/>
+          </operator>
+          <operator activated="true" class="mututal_information_matrix" compatibility="9.6.000" expanded="true" height="82" name="Mutual Information Matrix" width="90" x="313" y="34">
+            <parameter key="number_of_bins" value="10"/>
+          </operator>
+          <connect from_port="in 1" to_op="Select Attributes" to_port="example set input"/>
+          <connect from_op="Select Attributes" from_port="example set output" to_op="Mutual Information Matrix" to_port="example set"/>
+          <connect from_op="Mutual Information Matrix" from_port="example set" to_port="out 1"/>
+          <connect from_op="Mutual Information Matrix" from_port="matrix" to_port="out 2"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+          <portSpacing port="sink_out 3" spacing="0"/>
+        </process>
+      </operator>
+      <connect from_op="Retrieve DL4SE2" from_port="output" to_op="Multiply" to_port="input"/>
+      <connect from_op="Multiply" from_port="output 1" to_op="Quality Measures and Statistics" to_port="in 1"/>
+      <connect from_op="Multiply" from_port="output 2" to_op="Correlation Analysis" to_port="in 1"/>
+      <connect from_op="Multiply" from_port="output 3" to_op="Association Rules" to_port="in 1"/>
+      <connect from_op="Multiply" from_port="output 4" to_op="Clustering Analysis" to_port="in 1"/>
+      <connect from_op="Multiply" from_port="output 5" to_port="result 8"/>
+      <connect from_op="Clustering Analysis" from_port="out 1" to_port="result 6"/>
+      <connect from_op="Clustering Analysis" from_port="out 2" to_port="result 7"/>
+      <connect from_op="Clustering Analysis" from_port="out 3" to_port="result 9"/>
+      <connect from_op="Association Rules" from_port="out 1" to_port="result 5"/>
+      <connect from_op="Quality Measures and Statistics" from_port="out 1" to_port="result 1"/>
+      <connect from_op="Quality Measures and Statistics" from_port="out 2" to_port="result 2"/>
+      <connect from_op="Correlation Analysis" from_port="out 1" to_port="result 3"/>
+      <connect from_op="Correlation Analysis" from_port="out 2" to_port="result 4"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+      <portSpacing port="sink_result 4" spacing="0"/>
+      <portSpacing port="sink_result 5" spacing="0"/>
+      <portSpacing port="sink_result 6" spacing="0"/>
+      <portSpacing port="sink_result 7" spacing="0"/>
+      <portSpacing port="sink_result 8" spacing="0"/>
+      <portSpacing port="sink_result 9" spacing="0"/>
+      <portSpacing port="sink_result 10" spacing="0"/>
+    </process>
+  </operator>
+</process>
