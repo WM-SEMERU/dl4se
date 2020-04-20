@@ -1,4 +1,3 @@
-# dl4se
 # A Systematic Literature Review of Deep Learning in Software Engineering
 
 This list corresponds to a filtered literature search in Deep Learning Approaches used for Software Engieering Automation. *Last update:* April 9th 2020; *Maintaned by* @danaderp
@@ -13,7 +12,7 @@ This list corresponds to a filtered literature search in Deep Learning Approache
 | Suggesting Accurate Method and Class Names | Allamanis, et al. | [FSE](https://dl.acm.org/doi/10.1145/2786805.2786849) | 2015 |
 
 
-## Data Mining Tasks for the SLR
+# Data Mining Tasks for the SLR
 The data mining process is composed of four stages: 1) explore and describe data; 2) performe a mutual information analysis; 3) run an association rule generator: and 4) performe clustering to segment papers. 
 
 ### Data Exploration and Description
@@ -25,7 +24,7 @@ The data mining process is composed of four stages: 1) explore and describe data
 ### Clustering
 
 
-## Statistical Facts and Arguments Supporting the SLR 
+# Statistical Facts and Arguments Supporting the SLR 
 ### What types of SE tasks have been addressed by DL-based approaches?
 - Arg1: Software Researchers use a diverse set of SE tasks when automating with DL approaches:
   - Fact 1: Around the 70% of the task distribution shows distinct SE tasks topics with percentages evenly distributed (~[3-5]%).
