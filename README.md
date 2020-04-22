@@ -10,6 +10,8 @@ Data Analysis is the process that supports decision-making and informs arguments
 
 The Systematic Literature Review of DL4SE requires formal statistical modeling to refine the answers for the proposed research questions and formulate new hypotheses to be addressed in the future. Hence, we introduce DL4SE-DA, a set of statistical processes and data mining pipelines that uncover hidden relationships among Deep Learning reported literature in Software Engineering. Such hidden relationships are collected and analyzed to illustrate the state-of-the-art of DL techniques employed in the software engineering context.   
 
+![Venue Distribution](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/results/descriptive/%5Bvenue%5Dpaper-distribution.png)
+
 Our DL4SE-DA is a simplified version of the classical Knowledge Discovery in Databases, or KDD [(Fayyad, et al; 1996)](https://www.aaai.org/ojs/index.php/aimagazine/article/view/1230). The KDD process extracts knowledge from a DL4SE structured database. This structured database was the product of multiple iterations of data gathering and collection from the inspected literature. The KDD involves five stages:
 
 1. *Selection*. This stage was led by the taxonomy process explained in section xx of the paper. After collecting all the papers and creating the taxonomies, we organize the data into 35 features or attributes that you find in the [repository](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/Dl4SE-Dataset.csv). In fact, we manually engineered features from the DL4SE papers. Some of the features are venue, year published, type of paper, metrics, data-scale, type of tuning, learning algorithm, SE data, and so on.   
