@@ -2,7 +2,9 @@
 
 > *Last update:* April 2020; *Maintaned by* @danaderp
 
-- [A List of Deep Learning in Software Engineering](https://github.com/WM-CSCI-435-F19/dl4se/edit/master/data/data.md)
+- [A List of Deep Learning in Software Engineering](https://wm-csci-435-f19.github.io/dl4se/data/)
+- [Data Mining Tasks for the SLR of DL4SE](https://wm-csci-435-f19.github.io/dl4se/rapidminer/)
+- [Results & Arguments](https://wm-csci-435-f19.github.io/dl4se/results/)
 
 Data Analysis is the process that supports decision-making and informs arguments in empirical studies. Descriptive statistics, Exploratory Data Analysis (EDA), and Confirmatory Data Analysis (CDA) are the approaches that compose Data Analysis [(Xia & Gong; 2014)](https://www.emerald.com/insight/content/doi/10.1108/BIJ-08-2012-0050/full/html). An Exploratory Data Analysis (EDA) comprises a set of statistical and data mining procedures to describe data. We ran EDA to provide statistical facts and inform conclusions. The mined facts allow attaining arguments that would influence the Systematic Literature Review of DL4SE.
 
