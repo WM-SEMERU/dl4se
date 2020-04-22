@@ -48,6 +48,7 @@ The following features are contributing the most for segmenting papers. You can 
 - Data Preprocessing
 - Architecture
 - Automation Impact
+
 ### Prototypes
 Since we employed a K-Medoid clustering for segmenting the papers, it is possible to characterize 4 distinct types of papers reported until 2019. 
 
