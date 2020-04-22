@@ -7,7 +7,7 @@ Before carrying out any mining tasks, we decided to address a basic descriptive 
 ## Correlations by Mutual Information
 Due to the nominal nature of the SLR features, we were unable to perform classic statistical correlations on our data (i.e. pearson’s correlation). However, we adapted an operator based on attributes’ information dependencies. This operator is known as “mutual information” [(MacKay, 2005)](https://www.inference.org.uk/itprnn/book.pdf). Similar to covariance or pearson’s correlation, we were able to represent the outcomes of the operator in a confusion matrix (for further details please run the RapidMiner process).
 
-![Mutual Information Matrix of DL4SE](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/results/correlation/ConfusionMatrixMutualInformation.png)
+![Mutual Information Matrix of DL4SE](https://wm-csci-435-f19.github.io/dl4se/results/correlation/ConfusionMatrixMutualInformation.png)
 
 The mutual information measures to what extent one feature knows about another one. High mutual information values represent less uncertainty; therefore, we built arguments like “the deep learning architecture used on a paper is less uncertain (or more predictable) given a particular SE task” or  “the reported architecture on the papers are mutually dependent with the Software Engineering task”. 
 
