@@ -13,7 +13,7 @@ The mutual information measures to what extent one feature knows about another o
 
 The difference between correlations and associations rules depends on the granularity level of the data (e.g., paper, feature, or class). The correlation procedure was performed at the feature level, while the association rule learning was performed at the class or category level.
 
-### Association Rule Learning
+## Association Rule Learning
 For generating the association rules, we employed the classic FP-Growth algorithm (FP stands for Frequent Pattern). The FP-Growth computed frequently co-occurring items in our transactional dataset (see DL4SE-Dataset.csv) with a min support of 0.95. These items comprise each class per feature. For instance, the feature “Loss Function” exhibits a set of classes (or items) such as “NCE”, “Max Log Likelihood”, “Cross-Entropy”, “MSE”, “Hinge Loss”, “N/A-Loss”, and so on. The main premise of the FP-Growth can be summarized as: if an itemset is frequent (i.e. {MSE, RNN}),  then all of its item subsets are also frequent (i.e. {MSE} and {RNN}).
 
 Once the FP-Growth generated the itemsets (e.g. {MSE, Hinge Loss}), the algorithm started to check the itemsets’ support in continuous scans of the database. Such support measures the occurances of the itemset in the database. The FP-Growth scans on the DB brought about a FP-tree data structure. We recursively mined the FP-tree to extract frequent itemsets [(Han, et al; 2000)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.40.4436). Nonetheless, the association rule learning requires more than the FP-tree extraction.
@@ -24,7 +24,7 @@ An association rule serves as an if-then statement (or premise-conclusion) based
 
 We refute the idea that association rule learning avoids spurious correlations. Nonetheless, we organized the rules into an interconnected net of premises/conclusions to find explanations around techniques and methodologies reported on the papers. Any non-logical rule is disregarded as well as rules that possess lower support and confidence. 
 
-### Clustering
+## Clustering
 Clustering operators group or segment instances of data that are similar to each other and -at the same time- differentiable from other instances in other clusters. Additionally, this mining task describes datasets that are unlabeled by identifying a prototype or an instance that represents the entire cluster. For our EDA, we carried out a segmentation of papers using the k-medoids algorithm [(Kaufman & Rousseeuw; 1987)](https://wis.kuleuven.be/stat/robust/papers/publications-1987/kaufmanrousseeuw-clusteringbymedoids-l1norm-1987.pdf). We wanted to make sure that the centroids of the generated clusters are actual points (papers) from the dataset. 
 
 We built two distinct pipelines in RapidMiner for the paper grouping: 1) a PCA clustering and 2) an explainable clustering. On the one hand, the goal of the first pipeline is to visualize the points (or papers) in a reduced dimensionality (two pcs components). The PCA clustering allowed us to find the maximum change in variation when testing different k clusters values. The PCA clustering shows that 4 clusters were ideal for the analysis. On the other hand,  the goal of the second pipeline is to identify which features are influencing the segmentation. Knowing these features allowed us to explain how the algorithm was segmenting the space. Finally, we provided the descriptions of four types of papers found during the clustering analysis.  
