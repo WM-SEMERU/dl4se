@@ -1,14 +1,16 @@
 # Data Analysis for the Systematic Literature Review of DL4SE
 
-> *Last update:* April 2020; *Maintaned by* @danaderp
+> *Last update:* August 22nd 2020; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
 
-- [A List of Deep Learning in Software Engineering](https://wm-csci-435-f19.github.io/dl4se/data/)
-- [Data Mining Tasks for the SLR of DL4SE](https://wm-csci-435-f19.github.io/dl4se/rapidminer/)
-- [Results & Arguments](https://wm-csci-435-f19.github.io/dl4se/results/)
+- [Data Extraction and Taxonomy](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/RQ-Taxonomy.xlsx)
+- [Supplementary Data Extraction](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/Supplementary%20Extraction%20Form.xlsx)
+- [A List of Deep Learning in Software Engineering](https://github.com/WM-CSCI-435-F19/dl4se/edit/master/data/)
+- [Data Mining Tasks for the SLR of DL4SE](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/rapidminer)
+- [Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results)
 
 Data Analysis is the process that supports decision-making and informs arguments in empirical studies. Descriptive statistics, Exploratory Data Analysis (EDA), and Confirmatory Data Analysis (CDA) are the approaches that compose Data Analysis [(Xia & Gong; 2014)](https://www.emerald.com/insight/content/doi/10.1108/BIJ-08-2012-0050/full/html). An Exploratory Data Analysis (EDA) comprises a set of statistical and data mining procedures to describe data. We ran EDA to provide statistical facts and inform conclusions. The mined facts allow attaining arguments that would influence the Systematic Literature Review of DL4SE.
 
-The Systematic Literature Review of DL4SE requires formal statistical modeling to refine the answers for the proposed research questions and formulate new hypotheses to be addressed in the future. Hence, we introduce DL4SE-DA, a set of statistical processes and data mining pipelines that uncover hidden relationships among Deep Learning reported literature in Software Engineering. Such hidden relationships are collected and analyzed to illustrate the state-of-the-art of DL techniques employed in the software engineering context.  
+The Systematic Literature Review of DL4SE requires formal statistical modeling to refine the answers for the proposed research questions and formulate new hypotheses to be addressed in the future. Hence, we introduce DL4SE-DA, a set of statistical processes and data mining pipelines that uncover hidden relationships among Deep Learning reported literature in Software Engineering. Such hidden relationships are collected and analyzed to illustrate the state-of-the-art of DL techniques employed in the software engineering context.   
 
 ![Venue Distribution](https://wm-csci-435-f19.github.io/dl4se/results/descriptive/[venue]paper-distribution.png)
 
