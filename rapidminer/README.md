@@ -7,7 +7,7 @@ Before carrying out any mining tasks, we decided to address a basic descriptive 
 ## Correlations by Mutual Information
 Due to the nominal nature of the SLR features, we were unable to perform classic statistical correlations on our data (i.e. pearson’s correlation). However, we adapted an operator based on attributes’ information dependencies. This operator is known as “mutual information” [(MacKay, 2005)](https://www.inference.org.uk/itprnn/book.pdf). Similar to covariance or pearson’s correlation, we were able to represent the outcomes of the operator in a confusion matrix (for further details please run the RapidMiner process).
 
-![Mutual Information Matrix of DL4SE](https://wm-csci-435-f19.github.io/dl4se/results/correlation/ConfusionMatrixMutualInformation.png)
+![Mutual Information Matrix of DL4SE](https://wm-semeru.github.io/dl4se/results/correlation/ConfusionMatrixMutualInformation.png)
 
 The mutual information measures to what extent one feature knows about another one. High mutual information values represent less uncertainty; therefore, we built arguments like “the deep learning architecture used on a paper is less uncertain (or more predictable) given a particular SE task” or  “the reported architecture on the papers are mutually dependent with the Software Engineering task”. 
 
@@ -18,7 +18,7 @@ For generating the association rules, we employed the classic FP-Growth algorith
 
 Once the FP-Growth generated the itemsets (e.g. {MSE, Hinge Loss}), the algorithm started to check the itemsets’ support in continuous scans of the database. Such support measures the occurances of the itemset in the database. The FP-Growth scans on the DB brought about a FP-tree data structure. We recursively mined the FP-tree to extract frequent itemsets [(Han, et al; 2000)](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.40.4436). Nonetheless, the association rule learning requires more than the FP-tree extraction.
 
-![Association Rule Learning of DL4SE](https://wm-csci-435-f19.github.io/dl4se/results/association/association_rules.png)
+![Association Rule Learning of DL4SE](https://wm-semeru.github.io/dl4se/results/association/association_rules.png)
 
 An association rule serves as an if-then statement (or premise-conclusion) based on the frequent itemset pattern. Let’s observe the following rule mined from our dataset: “Given that an author used Supervised Learning, we can conclude that their approach is irreproducible with a support of 0.7 and a confidence of 0.8”. We observe the association rule has an antecedent (i.e., the itemset {Supervised Learning}) and a consequent (i.e.,the itemset {Irreproducible}). These relationships are mined from itemsets that usually have a high support and confidence. The confidence is a measure of the number of times that premise-conclusion statement is found to be true. We tuned both parameters to be greater than 0.7.
 
