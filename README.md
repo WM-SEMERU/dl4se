@@ -25,7 +25,7 @@ Our DL4SE-DA is a simplified version of the classical Knowledge Discovery in Dat
 We used RapidMiner as our software tool to conduct the data analysis. The procedures and pipelines were published in our repository.
 
 
-![Meaningful Association Rules Recovered](https://wm-csci-435-f19.github.io/dl4se/results/association/association_rules.png)
+![Meaningful Association Rules Recovered](https://wm-semeru.github.io/dl4se/results/association/association_rules.png)
 Overview of the most meaningful Association Rules. Blue rectangles are Premises and yellow are Conclusions. An arrow connecting a Premise with a Conclusion implies that given some premise, the conclusion is associated. E.g., Given that an author used Supervised Learning, we can conclude that their approach is irreproducible with a certain Support and Confidence.
 
 **Support = Number of occurrences this statement is true divided by the amount of statements**
