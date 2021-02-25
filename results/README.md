@@ -34,12 +34,12 @@ The following relationships are strong correlated by mutual information. It show
 
 # Clustering
 ## K-means and PCA Reduction
-![Clustering Description](https://wm-csci-435-f19.github.io/dl4se/results/clustering/%5Bclustering%5D%20PCA-Clustering.PNG)
+![Clustering Description](https://wm-semeru.github.io/dl4se/results/clustering/%5Bclustering%5D%20PCA-Clustering.PNG)
 ### Clustering visualization
-![PCA Clustering](https://wm-csci-435-f19.github.io/dl4se/results/clustering/%5Bclustering%5D%20PCA-Dimension.PNG)
+![PCA Clustering](https://wm-semeru.github.io/dl4se/results/clustering/%5Bclustering%5D%20PCA-Dimension.PNG)
 ## Explainable Clustering
 Using PCA for clustering fails to provide explainable features for clustering decision. Therefore, we used all features witout any trasformation and then perform K-Meoids algorithm with nominal measures and Kulczynski Similarity. The following plot depicts the cetroids values to determine which features contributes the most for segmenting the papers.
-![Centroids Plot](https://wm-csci-435-f19.github.io/dl4se/results/clustering/%5Bclustering%5D%20Centroids.PNG)
+![Centroids Plot](https://wm-semeru.github.io/dl4se/results/clustering/%5Bclustering%5D%20Centroids.PNG)
 ### Influential Features
 The following features are contributing the most for segmenting papers. You can observe in the previous plot the distance exhibit for each feature respect to the centroid value. 
 - Venue
