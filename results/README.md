@@ -27,7 +27,7 @@ The following relationships are strong correlated by mutual information. It show
 | Combat Overfitting | 3.66 | [over] Data Balancing | 0.34 |
 | Venue | 3.65 | [pre] I/O Vectors | 0.34 |
 | Data Preprocessing | 3.27 | [metric] Approx Error | 0.27 |
-| Loss Function 3.05 | [over] Data Augmentation | 0.27 |
+| Loss Function | 3.05 | [over] Data Augmentation | 0.27 |
 
 
 The difference between correlations and associations rules depends on the granularity level of the data (e.g., paper, feature, or class). The correlation procedure was performed at the feature level, while the association rule learning was performed at the class or category level.
@@ -43,7 +43,7 @@ An association rule serves as an if-then statement (or premise-conclusion) based
 
 We refute the idea that association rule learning avoids spurious correlations. Nonetheless, we organized the rules into an interconnected net of premises/conclusions to find explanations around techniques and methodologies reported on the papers. Any non-logical rule is disregarded as well as rules that possess lower support and confidence. 
 
-### Association Rules Reasoning
+### Association Rules Reasoning [2020 results]
 1. **A reproducibility argument**: For most of the papers that exclude vision and repo meta, input/output examples, or natural language based data, the authors fail to provide enough data to reproduce their approach with confidence levels above ~0.82.
 2. **A learning type argument**: For most of the papers that use Supervised learning, the authors omit to report ROC or AUC evaluations, data extraction details, and are irreproducible with confidence levels above ~0.87.
 3. **A preprocessing argument**: In the papers that exclude vision or repo meta based data, most of the authors fail to report how they preprocessed their data with confidence levels above ~0.81.
@@ -83,7 +83,7 @@ Since we employed a K-Medoid clustering for segmenting the papers, it is possibl
 
 # Interpretation & Evaluation
 
-## Statistical Facts and Arguments Supporting the SLR 
+## Statistical Facts and Arguments Supporting the SLR [2020 results]
 ### What types of SE tasks have been addressed by DL-based approaches?
 - Arg1: Software Researchers use a diverse set of SE tasks when automating with DL approaches:
   - Fact 1: Around the 70% of the task distribution shows distinct SE tasks topics with percentages evenly distributed (~[3-5]%).
