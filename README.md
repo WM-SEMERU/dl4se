@@ -3,8 +3,7 @@
 > *Last update:* March 2021; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
 
 - [A List of Deep Learning in Software Engineering](https://github.com/WM-CSCI-435-F19/dl4se/edit/master/data/)
-- [Data Mining Tasks for the SLR of DL4SE](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/rapidminer)
-- [Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results/README.md)
+- [Data Mining Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results/README.md)
 - [Data Extraction and Taxonomy](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/RQ-Taxonomy.xlsx)
 - [Supplementary Data Extraction](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/Supplementary%20Extraction%20Form.xlsx)
 
