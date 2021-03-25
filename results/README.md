@@ -61,7 +61,8 @@ We built two distinct pipelines in RapidMiner for the paper grouping: 1) a PCA c
 ### Explainable Clustering
 Using PCA for clustering fails to provide explainable features for clustering decision. Therefore, we used all features witout any trasformation and then perform K-Meoids algorithm with nominal measures and Kulczynski Similarity. The following plot depicts the cetroids values to determine which features contributes the most for segmenting the papers.
 ![Centroids Plot](https://wm-semeru.github.io/dl4se/results/dataset2021/clustering/Clustering%20Centroids.PNG)
-#### Influential Features
+
+### Prototypes
 The following features are contributing the most for segmenting papers. You can observe in the previous plot the distance exhibit for each feature respect to the centroid value. 
 - SE Problem
 - Architecture
@@ -69,7 +70,6 @@ The following features are contributing the most for segmenting papers. You can 
 - Data Preprocessing
 - [pre] Tokenization
 
-### Prototypes
 Since we employed a K-Medoid clustering for segmenting the papers, it is possible to characterize 4 distinct types of papers reported until 2019. 
 
 | Influential Feature | Paper Type I |Paper Type II | Paper Type III |  Paper Type IV |
