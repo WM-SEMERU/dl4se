@@ -1,0 +1,24 @@
+AAAI	High Impact	7 papers	3 papers	98 papers
+ASE	High Impact	13 papers	1 papers	142 papers
+EMSE	Medium Impact	1 paper		0 papers	59 papers
+FSE	High Impact	12 papers	0 papers	130 papers
+ICLR	Medium Impact	12 papers	4 papers	44 papers
+ICML 	High Impact 	7 papers	3 papers	55 papers
+ICSME 	Low Impact 	7 papers	1 papers	91 papers
+ICSE 	High Impact 	17 papers	0 papers	90 papers
+ISSTA 	Low Impact 	2 papers	0 papers	25 papers
+MSR 	Low Impact 	4 papers	1 papers	27 papers
+NIPS 	High Impact 	12 papers	1 papers	29 papers
+TSE 	High Impact 	9 papers 	1 papers	97 papers
+ICPC 	Medium Impact 	2 papers	1 papers	15 papers
+IJAI	High Impact	0 papers	0 papers	69 Papers
+OOPSLA	Medium Impact	4 papers	1 papers	32 Papers
+PLDI	Medium Impact	1 papers	1 papers	76 papers
+ICST	Low Impact	1 papers	0 papers	42 papers
+
+
+
+
+Total papers accepted: 111
+Total papers gathered: 1230
+Total papers snowballed: 18
