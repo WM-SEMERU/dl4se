@@ -1,10 +1,9 @@
 # Data Analysis for the Systematic Literature Review of DL4SE
 
-> *Last update:* August 22nd 2020; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
+> *Last update:* March 2021; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
 
 - [A List of Deep Learning in Software Engineering](https://github.com/WM-CSCI-435-F19/dl4se/edit/master/data/)
-- [Data Mining Tasks for the SLR of DL4SE](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/rapidminer)
-- [Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results/README.md)
+- [Data Mining Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results/README.md)
 - [Data Extraction and Taxonomy](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/RQ-Taxonomy.xlsx)
 - [Supplementary Data Extraction](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/Supplementary%20Extraction%20Form.xlsx)
 
@@ -25,8 +24,9 @@ Our DL4SE-DA is a simplified version of the classical Knowledge Discovery in Dat
 We used RapidMiner as our software tool to conduct the data analysis. The procedures and pipelines were published in our repository.
 
 
-![Meaningful Association Rules Recovered](https://wm-semeru.github.io/dl4se/results/association/association_rules.png)
-Overview of the most meaningful Association Rules. Blue rectangles are Premises and yellow are Conclusions. An arrow connecting a Premise with a Conclusion implies that given some premise, the conclusion is associated. E.g., Given that an author used Supervised Learning, we can conclude that their approach is irreproducible with a certain Support and Confidence.
+![Meaningful Association Rules Recovered](https://wm-semeru.github.io/dl4se/results/dataset2021/association/AssociationRules.png)
+
+Overview of the most meaningful Association Rules. Rectangles are both Premises and Conclusions. An arrow connecting a Premise with a Conclusion implies that given some premise, the conclusion is associated. E.g., Given that an author used Supervised Learning, we can conclude that their approach is irreproducible with a certain Support and Confidence.
 
 **Support = Number of occurrences this statement is true divided by the amount of statements**
 **Confidence = The support of the statement divided by the number of occurrences of the premise**
