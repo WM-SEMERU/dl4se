@@ -30,7 +30,7 @@
 | Combining Symbolic Expressions and Black-box Function Evaluations in Neural Programs | Arabshahi, et al. | [ICLR](https://arxiv.org/abs/1801.04342) | 2018 |
 | Compiler fuzzing through deep learning | Cummins, et al. | [ISSTA](https://dl.acm.org/doi/10.1145/3213846.3213848) | 2018 |
 | Convolutional neural networks over tree structures for programming language processing | Mou, et al. | [AAAI](https://dl.acm.org/doi/10.5555/3015812.3016002) | 2016 |
-| Cross-language learning for program classification using bilateral tree-based convolutional neural networks | Bui, et al. | [AAAI](https://arxiv.org/abs/1710.06159#:~:text=version%2C%20v2)%5D-,Cross%2DLanguage%20Learning%20for%20Program%20Classification%20using,Tree%2DBased%20Convolutional%20Neural%20Networks&text=It%20is%20layered%20on%20top,in%20an%20individual%20programming%20language.) | 2018 |
+| Cross-language learning for program classification using bilateral tree-based convolutional neural networks | Bui, et al. | [AAAI](https://www.aaai.org/ocs/index.php/WS/AAAIW18/paper/viewFile/17338/15660) | 2018 |
 | Deep API learning | Gu, et al. | [FSE](https://dl.acm.org/doi/10.1145/2950290.2950334) | 2016 |
 | DeepBugs: a learning approach to name-based bug detection | Pradel, et al. | [PLDI](https://dl.acm.org/doi/10.1145/3276517) | 2018 |
 | Deep code comment generation | Hu, et al. | [ICPC](https://dl.acm.org/doi/10.1145/3196321.3196334) | 2018 |
