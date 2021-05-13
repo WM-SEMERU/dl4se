@@ -1,6 +1,6 @@
 # DL4SE Paper List
 
->This list corresponds to a filtered literature search in Deep Learning Approaches used for Software Engieering Automation. *Last update:* April 9th 2020; *Maintaned by* @danaderp
+>This list corresponds to a filtered literature search in Deep Learning Approaches used for Software Engieering Automation. *Last update:* May 13th 2021; *Maintaned by* @cawatson
 
 | Title | Authors | Venue | Year | 
 | --- | --- | --- | --- |
