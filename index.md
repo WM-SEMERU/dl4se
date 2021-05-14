@@ -1,9 +1,9 @@
 # Data Analysis for the Systematic Literature Review of DL4SE
 
-> *Last update:* August 22nd 2020; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
+> *Last update:* May 13nd 2021; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
 
-- [Data Extraction and Taxonomy](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/RQ-Taxonomy.xlsx)
-- [Supplementary Data Extraction](https://github.com/WM-CSCI-435-F19/dl4se/blob/master/data/Supplementary%20Extraction%20Form.xlsx)
+- [Data Taxonomy](https://github.com/WM-SEMERU/dl4se/blob/master/data/SLR%20Taxonomies.xlsx)
+- [Raw Data Extraction](https://github.com/WM-SEMERU/dl4se/blob/master/data/SLR%20Extractions.xlsx)
 - [A List of Deep Learning in Software Engineering](https://github.com/WM-CSCI-435-F19/dl4se/edit/master/data/)
 - [Data Mining Tasks for the SLR of DL4SE](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/rapidminer)
 - [Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results)
