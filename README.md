@@ -1,6 +1,6 @@
 # Data Analysis for the Systematic Literature Review of DL4SE
 
-> *Last update:* March 2021; *Maintaned by* @danaderp, @cawatson, @kpmoran, @ncoop57
+> *Last update:* May 2021; *Maintaned by* @cawatson, @ncoop57, @danaderp, @kpmoran
 
 - [A List of Deep Learning in Software Engineering](https://github.com/WM-CSCI-435-F19/dl4se/edit/master/data/)
 - [Data Mining Results & Arguments](https://github.com/WM-CSCI-435-F19/dl4se/tree/master/results/README.md)
