@@ -4,13 +4,13 @@
 
 | Title | Authors | Venue | Year | 
 | --- | --- | --- | --- |
-| A convolutional attention network for extreme summarization of source code | Allamanis, et al. | [ICML](https://arxiv.org/abs/1602.03001) | 2016 |
+| A convolutional attention network for extreme summarization of source code | Allamanis, et al. | [ICML](http://proceedings.mlr.press/v48/allamanis16.pdf) | 2016 |
 | A deep learning approach to identifying source code in images and video | Ott, et al. | [MSR](https://ieeexplore.ieee.org/document/8595221) | 2018 |
 | A Deep Learning Model for Estimating Story Points | Choetkiertikul, et al. | [TSE](https://ieeexplore.ieee.org/document/8255666) | 2018 |
 | A Deep Neural Network Language Model with Contexts for Source Code | Nguyen, et al. | [SANER](https://ieeexplore.ieee.org/document/8330220) | 2018 |
-| A Grammar-Based Structural CNN Decoder for Code Generation | Sun, et al. | [AAAI](https://arxiv.org/abs/1811.06837) | 2019 |
+| A Grammar-Based Structural CNN Decoder for Code Generation | Sun, et al. | [AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/4686) | 2019 |
 | A Neural Framework for Retrieval and Summarization of Source Code | Chen & Zhou | [ASE](https://dl.acm.org/doi/10.1145/3238147.3240471) | 2018 |
-| A Neural Model for Generating Natural Language Summaries of Program Subroutines | LeClair, et al. | [ICSE](https://arxiv.org/abs/1902.01954) | 2019 |
+| A Neural Model for Generating Natural Language Summaries of Program Subroutines | LeClair, et al. | [ICSE](https://dl.acm.org/doi/10.1109/ICSE.2019.00087) | 2019 |
 | A Neural Model for Method Name Generation from Functional Description | Gao, et al. | [SANER](https://ieeexplore.ieee.org/document/8667994) | 2019 |
 | A Novel Neural Source Code Representation Based on Abstract Syntax Tree | Zhang, et al. | [ICSE](https://dl.acm.org/doi/10.1109/ICSE.2019.00086) | 2019 |
 | ActionNet: Vision-Based Workflow Action Recognition From Programming Screencasts | Zhao, et al. | [ICSE](https://ieeexplore.ieee.org/document/8811922) | 2019 |
@@ -106,11 +106,10 @@
 | Neural Sketch Learning for Conditional Program Generation | Murali, et al. | [ICLR](https://openreview.net/pdf?id=HkfXMz-Ab) | 2018 |
 | Neural-Augmented Static Analysis of Android Communication | Zhao, et al. | [FSE](https://dl.acm.org/doi/10.1145/3236024.3236066) | 2018 |
 | Neural-Guided Deductive Search for Real-Time Program Synthesis from Examples | Kalyan, et al. | [ICLR](https://arxiv.org/abs/1804.01186) | 2018 |
-| Neuro-symbolic program corrector for introductory programming assignments | Bhatia, et al. | [ICSE](https://dl.acm.org/doi/10.1145/3180155.3180219) | 2018 |
 | Neuro-Symbolic Program Synthesis | Parisotto, et al. | [ICLR](https://dl.acm.org/doi/10.1145/3180155.3180219) | 2017 |
+| Neuro-symbolic program corrector for introductory programming assignments | Bhatia, et al. | [ICSE](https://dl.acm.org/doi/10.1145/3180155.3180219) | 2018 |
 | NL2Type: Inferring JavaScript Function Types from Natural Language Information | Malik, et al. | [ICSE](https://ieeexplore.ieee.org/document/8811893) | 2019 |
 | On Learning Meaningful Code Changes via Neural Machine Translation | Tufano, et al. | [ICSE](https://arxiv.org/abs/1901.09102) | 2019 |
-| On the adoption of neural networks in modeling software reliability | Gusmanov, et al. | [FSE](https://dl.acm.org/doi/10.1145/3236024.3275433) | 2018 |
 | On the naturalness of proofs | Hellendoorn, et al. | [FSE](https://dl.acm.org/doi/abs/10.1145/3236024.3264832) | 2018 |
 | Open Vocabulary Learning on Source Code with a Graph-Structured Cache | Cvitkovic, et al. | [ICML](http://proceedings.mlr.press/v97/cvitkovic19b.html) | 2019 |
 | Oreo: Detection of Clones in the Twilight Zone | Saini, et al. | [FSE](https://arxiv.org/abs/1806.05837) | 2018 |
