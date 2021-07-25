@@ -1,15 +1,17 @@
 # DL4SE Paper List
 
->This list corresponds to a filtered literature search in Deep Learning Approaches used for Software Engieering Automation. *Last update:* May 13th 2021; *Maintaned by* @cawatson
+>This list corresponds to a filtered literature search in Deep Learning Approaches used for Software Engieering Automation. *Last update:* May 13th 2021; *Maintaned by* @cawatson, @ncoop57, @danaderp
 
 | Title | Authors | Venue | Year | 
 | --- | --- | --- | --- |
 | A convolutional attention network for extreme summarization of source code | Allamanis, et al. | [ICML](https://arxiv.org/abs/1602.03001) | 2016 |
 | A deep learning approach to identifying source code in images and video | Ott, et al. | [MSR](https://ieeexplore.ieee.org/document/8595221) | 2018 |
 | A Deep Learning Model for Estimating Story Points | Choetkiertikul, et al. | [TSE](https://ieeexplore.ieee.org/document/8255666) | 2018 |
+| A Deep Neural Network Language Model with Contexts for Source Code | Nguyen, et al. | [SANER](https://ieeexplore.ieee.org/document/8330220) | 2018 |
 | A Grammar-Based Structural CNN Decoder for Code Generation | Sun, et al. | [AAAI](https://arxiv.org/abs/1811.06837) | 2019 |
 | A Neural Framework for Retrieval and Summarization of Source Code | Chen & Zhou | [ASE](https://dl.acm.org/doi/10.1145/3238147.3240471) | 2018 |
 | A Neural Model for Generating Natural Language Summaries of Program Subroutines | LeClair, et al. | [ICSE](https://arxiv.org/abs/1902.01954) | 2019 |
+| A Neural Model for Method Name Generation from Functional Description | Gao, et al. | [SANER](https://ieeexplore.ieee.org/document/8667994) | 2019 |
 | A Novel Neural Source Code Representation Based on Abstract Syntax Tree | Zhang, et al. | [ICSE](https://dl.acm.org/doi/10.1109/ICSE.2019.00086) | 2019 |
 | ActionNet: Vision-Based Workflow Action Recognition From Programming Screencasts | Zhao, et al. | [ICSE](https://ieeexplore.ieee.org/document/8811922) | 2019 |
 | An Empirical Investigation into Learning Bug-fixing Patches in the Wild via Neural Machine Translation | Tufano, et al. | [ASE](https://dl.acm.org/doi/10.1145/3238147.3240732) | 2018 |
@@ -24,15 +26,18 @@
 | Automating Intention Mining | Huang, et al. | [TSE](https://ieeexplore.ieee.org/document/8493285) | 2018 |
 | AutoPandas: neural-backed generators for program synthesis | Bavishi, et al. | [PLDI](https://dl.acm.org/doi/10.1145/3360594) | 2019 |
 | Bayesian Specification Learning for Finding API Usage Errors | Murali, et al. | [FSE](https://www.cs.rice.edu/~sc40/pubs/murali-fse17.pdf) | 2017 |
+| Bilateral Dependency Neural Networks for Cross-Language Algorithm Classification | Bui, et al. | [SANER](https://ieeexplore.ieee.org/document/8667995) | 2019 |
 | CCLearner: A Deep Learning-Based Clone Detection Approach | Li, et al. | [ICSME](https://www.semanticscholar.org/paper/CCLearner%3A-A-Deep-Learning-Based-Clone-Detection-Li-Feng/cd98927be7c78129ce42526ec83c58c394a43192) | 2017 |
+| CNN-FL: An Effective Approach for Localizing Faults using Convolutional Neural Networks | Zhang, et al. | [SANER](https://ieeexplore.ieee.org/document/8668002) | 2019 |
 | Code completion with statistical language models | Raychev, et al. | [PLDI](https://dl.acm.org/doi/10.1145/2666356.2594321) | 2014 |
 | Combining Deep Learning with Information Retrieval to Localize Buggy Files for Bug Reports | An Ngoc Lam, et al. | [ASE](https://ieeexplore.ieee.org/document/7372035) | 2015 |
 | Combining Symbolic Expressions and Black-box Function Evaluations in Neural Programs | Arabshahi, et al. | [ICLR](https://arxiv.org/abs/1801.04342) | 2018 |
 | Compiler fuzzing through deep learning | Cummins, et al. | [ISSTA](https://dl.acm.org/doi/10.1145/3213846.3213848) | 2018 |
+| Connecting software metrics across versions to predict defects | Liu, et al. | [SANER](https://ieeexplore.ieee.org/document/8330212) | 2018 |
 | Convolutional neural networks over tree structures for programming language processing | Mou, et al. | [AAAI](https://dl.acm.org/doi/10.5555/3015812.3016002) | 2016 |
+| Cross-language clone detection by learning over abstract syntax trees | Perez, et al. | [MSR](https://ieeexplore.ieee.org/document/8816761) | 2019 |
 | Cross-language learning for program classification using bilateral tree-based convolutional neural networks | Bui, et al. | [AAAI](https://www.aaai.org/ocs/index.php/WS/AAAIW18/paper/viewFile/17338/15660) | 2018 |
 | Deep API learning | Gu, et al. | [FSE](https://dl.acm.org/doi/10.1145/2950290.2950334) | 2016 |
-| DeepBugs: a learning approach to name-based bug detection | Pradel, et al. | [PLDI](https://dl.acm.org/doi/10.1145/3276517) | 2018 |
 | Deep code comment generation | Hu, et al. | [ICPC](https://dl.acm.org/doi/10.1145/3196321.3196334) | 2018 |
 | Deep code search | Gu, et al. | [ICSE](https://ieeexplore.ieee.org/document/8453172) | 2018 |
 | Deep Green: Modelling Time-Series of Software Energy Consumption | Romansky, et al. | [ICSME](https://ieeexplore.ieee.org/document/8094428) | 2017 |
@@ -40,27 +45,35 @@
 | Deep learning code fragments for code clone detection | White, et al. | [ASE](https://ieeexplore.ieee.org/document/7582748/versions) | 2015 |
 | Deep Learning Similarities from Different Representations of Source Code | Tufano, et al. | [MSR](https://ieeexplore.ieee.org/document/8595238) | 2018 |
 | Deep learning type inference | Hellendoorn, et al. | [FSE](https://dl.acm.org/doi/10.1145/3236024.3236051) | 2018 |
+| Deep Reinforcement Learning for Syntactic Error Repair in Student Programs | Gupta, et al. | [AAAI](https://ojs.aaai.org//index.php/AAAI/article/view/3882) | 2019 |
+| Deep Review Sharing | Guo, et al. | [SANER](https://ieeexplore.ieee.org/document/8668037) | 2019 |
 | Deep Semantic Feature Learning for Software Defect Prediction | Wang, et al. | [TSE](https://ieeexplore.ieee.org/document/8502853) | 2018 |
 | Deep specification mining | Le, et al. | [ISSTA](https://dl.acm.org/doi/10.1145/3213846.3213876) | 2018 |
+| Deep Transfer Bug Localization | Huo, et al. | [TSE](https://ieeexplore.ieee.org/document/8736995?denied=) | 2019 |
+| DeepBugs: a learning approach to name-based bug detection | Pradel, et al. | [PLDI](https://dl.acm.org/doi/10.1145/3276517) | 2018 |
 | DeepCoder: Learning to Write Programs | Balog, et al. | [ICLR](https://arxiv.org/abs/1611.01989) | 2017 | 
 | DeepFix: fixing common C language errors by deep learning | Gupta, et al. | [AAAI](https://dl.acm.org/doi/10.1145/3213846.3213876) | 2017 |
 | DeepFuzz: Automatic Generation of Syntax Valid C Programs for Fuzz Testing | Liu, et al. | [AAAI](https://dl.acm.org/doi/10.1145/3213846.3213876) | 2019 |
+| DeepJIT: An End-To-End Deep Learning Framework for Just-In-Time Defect Prediction | Hoang, et al. | [MSR](https://ieeexplore.ieee.org/document/8816772) | 2019 |
+| DeepLink: A Code Knowledge Graph Based Deep Learning Approach for Issue-Commit Link Recovery | Xie, et al. | [SANER](https://ieeexplore.ieee.org/document/8667969) | 2019 |
 | DeepPerf: Performance Prediction for Configurable Software with Deep Sparse Neural Network | Ha, et al. | [ICSE](https://arxiv.org/abs/1611.01989) | 2019 | 
 | DeepRoad: GAN-based metamorphic testing and input validation framework for autonomous driving systems | Zhang, et al. | [ASE](https://dl.acm.org/doi/10.1145/3238147.3238187) | 2019 | 
 | DeepSim: deep learning code functional similarity | Zhao, et al. | [FSE](https://dl.acm.org/doi/abs/10.1145/3236024.3236068) | 2018 | 
-| DSM: a specification mining tool using recurrent neural network based language model | Le, et al. | [FSE](https://dl.acm.org/doi/10.1145/3236024.3264597) | 2018 |
 | Differentiable Programs with Neural Libraries | Gaunt, et al. | [ICML](http://proceedings.mlr.press/v70/gaunt17a.html) | 2017 |
 | DRLGENCERT: Deep Learning-based Automated Testing of Certificate Verification in SSL/TLS Implementations | Chen, et al. | [ICSME](https://ieeexplore.ieee.org/document/8811988) | 2018 |
 | DSM: a specification mining tool using recurrent neural network based language model | Le, et al. | [FSE](https://dl.acm.org/doi/10.1145/3236024.3264597) | 2018 |
 | Dynamic Neural Program Embedding for Program Repair | Wang, et al. | [ICLR](https://arxiv.org/abs/1711.07163) | 2018 |
 | Exploring the use of deep learning for feature location | Corley, et al. | [ICSME](https://ieeexplore.ieee.org/document/7332513) | 2015 |
+| Extracting API Tips from Developer Question and Answer Websites | Wang, et al. | [MSR](https://dl.acm.org/doi/10.1109/MSR.2019.00058) | 2019 |
+| Feature Maps: A Comprehensible Software presentation for Design Pattern Detection | Thaller, et al. | [SANER](https://ieeexplore.ieee.org/document/8667978) | 2019 |
 | From UI design image to GUI skeleton: a neural machine translator to bootstrap mobile GUI implementation | Chen, et al. | [ICSE](https://dl.acm.org/doi/10.1145/3180155.3180240) | 2018 |
 | Graph Embedding Based Familial Analysis of Android Malware using Unsupervised Learning | Fan, et al. | [ICSE](https://ieeexplore.ieee.org/abstract/document/8812083) | 2019 |
 | How Well Do Change Sequences Predict Defects? Sequence Learning from Software Changes | Wen, et al. | [TSE](https://ieeexplore.ieee.org/document/8493303) | 2018 |
 | Image-to-Markup Generation with Coarse-to-Fine Attention | Deng, et al. | [ICML](http://proceedings.mlr.press/v70/deng17a/deng17a.pdf) | 2017 |
-| Improving bug detection via context-based code representation learning and attention-based neural networks | Li, et al. | [PLDI](https://dl.acm.org/doi/10.1145/3360588) | 2019 |
 | Improving automatic source code summarization via deep reinforcement learning | Wan, et al. | [ASE](https://ieeexplore.ieee.org/document/9000003) | 2018 |
+| Improving bug detection via context-based code representation learning and attention-based neural networks | Li, et al. | [PLDI](https://dl.acm.org/doi/10.1145/3360588) | 2019 |
 | Improving Neural Program Synthesis with Inferred Execution Traces | Shin, et al. | [NIPS](https://papers.nips.cc/paper/8107-improving-neural-program-synthesis-with-inferred-execution-traces) | 2018 |
+| Keep it simple: Is deep learning good for linguistic smell detection? | Fakhoury, et al. | [SANER](https://ieeexplore.ieee.org/document/8330265) | 2018 |
 | Latent Attention For If-Then Program Synthesis | Liu, et al. | [NIPS](https://papers.nips.cc/paper/6284-latent-attention-for-if-then-program-synthesis) | 2016 |
 | Learn&Fuzz: Machine learning for input fuzzing | Godefroid, et al. | [ASE](https://ieeexplore.ieee.org/document/8115618) | 2017 |
 | Learning a dual-language vector space for domain-specific cross-lingual question retrieval | Chen, et al. | [ASE](https://ieeexplore.ieee.org/document/7582810) | 2016 |
@@ -72,9 +85,11 @@
 | Learning to mine aligned code and natural language pairs from stack overflow | Yin, et al. | [MSR](https://dl.acm.org/doi/10.1145/3196398.3196408) | 2018 |
 | Learning to Predict Severity of Software Vulnerability Using Only Vulnerability Description | Han, et al. | [ICSME](https://ieeexplore.ieee.org/document/8094415) | 2017 |
 | Learning to Repair Software Vulnerabilities with Generative Adversarial Networks | Harer, et al. | [NIPS](https://papers.nips.cc/paper/8018-learning-to-repair-software-vulnerabilities-with-generative-adversarial-networks) | 2018 |
-| Learning to Represent Programs with Graphs | Allamanis, et al. | [ICLR](https://arxiv.org/abs/1711.00740) | 2018 |
 | Learning to Represent Edits | Yin, et al. | [ICLR](https://arxiv.org/abs/1810.13337) | 2019 |
+| Learning to Represent Programs with Graphs | Allamanis, et al. | [ICLR](https://arxiv.org/abs/1711.00740) | 2018 |
 | Learning to Spot and Refactor Inconsistent Method Names | Liu, et al. | [ICSE](https://ieeexplore.ieee.org/document/8812134) | 2019 |
+| Learning-Based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection | Büch, et al. | [SANER](https://ieeexplore.ieee.org/document/8668039) | 2019 |
+| Lessons learned from using a deep tree-based model for software defect prediction in practice | Dam, et al. | [MSR](https://ieeexplore.ieee.org/document/8816787) | 2019 |
 | Leveraging Grammar and Reinforcement Learning for Neural Program Synthesis | Bunel, et al. | [ICLR](https://arxiv.org/abs/1805.04276) | 2018 |
 | Machine Learning-Based Prototyping of Graphical User Interfaces for Mobile Apps | Moran, et al. | [TSE](https://arxiv.org/abs/1802.02312) | 2018 |
 | Making neural programming architectures generalize via recursion | Cai, et al. | [ICLR](https://people.eecs.berkeley.edu/~dawnsong/papers/iclr_2017_recursion.pdf) | 2017 |
@@ -97,6 +112,7 @@
 | On Learning Meaningful Code Changes via Neural Machine Translation | Tufano, et al. | [ICSE](https://arxiv.org/abs/1901.09102) | 2019 |
 | On the adoption of neural networks in modeling software reliability | Gusmanov, et al. | [FSE](https://dl.acm.org/doi/10.1145/3236024.3275433) | 2018 |
 | On the naturalness of proofs | Hellendoorn, et al. | [FSE](https://dl.acm.org/doi/abs/10.1145/3236024.3264832) | 2018 |
+| Open Vocabulary Learning on Source Code with a Graph-Structured Cache | Cvitkovic, et al. | [ICML](http://proceedings.mlr.press/v97/cvitkovic19b.html) | 2019 |
 | Oreo: Detection of Clones in the Twilight Zone | Saini, et al. | [FSE](https://arxiv.org/abs/1806.05837) | 2018 |
 | Predicting and Evaluating Software Model Growth in the Automotive Industry | Schroeder, et al. | [ICSME](https://arxiv.org/abs/1708.02884) | 2017 |
 | Predicting Delivery Capability in Iterative Software Development | Choetkiertikul, et al. | [TSE](https://ieeexplore.ieee.org/document/7898472) | 2018 |
@@ -105,12 +121,15 @@
 | RobustFill: Neural Program Learning under Noisy I/O | Devlin, et al. | [ICML](https://arxiv.org/pdf/1703.07469.pdf) | 2017 |
 | Semantically Enhanced Software Traceability Using Deep Learning Techniques | Guo, et al. | [ICSE](https://ieeexplore.ieee.org/document/7985645) | 2017 |
 | Sentiment analysis for software engineering: how far can we go? | Lin, et al. | [ICSE](https://dl.acm.org/doi/10.1145/3180155.3180195) | 2018 |
-| Suggesting Accurate Method and Class Names | Allamanis, et al. | [FSE](https://dl.acm.org/doi/10.1145/2786805.2786849) | 2015 |
 | SeqFuzzer: An Industrial Protocol Fuzzing Framework from a Deep Learning Perspective | Zhao, et al. | [ICST](https://ieeexplore.ieee.org/abstract/document/8730177) | 2019 |
+| Sorting and Transforming Program Repair Ingredients via Deep Learning Code Similarities | White, et al. | [SANER](https://ieeexplore.ieee.org/document/8668043) | 2019 |
+| Suggesting Accurate Method and Class Names | Allamanis, et al. | [FSE](https://dl.acm.org/doi/10.1145/2786805.2786849) | 2015 |
+| Systematic Comprehension for Developer Reply in Mobile System Forum | Guo, et al. | [SANER](https://ieeexplore.ieee.org/document/8668016) | 2019 |
 | Toward deep learning software repositories | White, et al. | [MSR](https://dl.acm.org/doi/10.5555/2820518.2820559) | 2015 |
 | Towards Accurate Duplicate Bug Retrieval Using Deep Learning Techniques | Deshmukh, et al. | [ICSME](https://ieeexplore.ieee.org/document/8094414) | 2017 |
 | Towards Synthesizing Complex Programs from Input-Output Examples | Chen, et al. | [ICML](https://arxiv.org/abs/1706.01284) | 2018 |
 | Training binary classifiers as data structure invariants | Molina, et al. | [ICSE](https://dl.acm.org/doi/10.1109/ICSE.2019.00084) | 2019 |
 | Tree-to-tree Neural Networks for Program Translation | Chen, et al. | [NIPS](https://papers.nips.cc/paper/7521-tree-to-tree-neural-networks-for-program-translation) | 2018 |
+| Using recurrent neural networks for decompilation | Katz, et al. | [SANER](https://ieeexplore.ieee.org/document/8330222) | 2018 |
 | VulSeeker: a semantic learning based vulnerability seeker for cross-platform binary | Gao, et al. | [ASE](https://dl.acm.org/doi/10.1145/3238147.3240480) | 2018 |
 | αDiff: cross-version binary code similarity detection with DNN | Liu, et al. | [ASE](https://dl.acm.org/doi/10.1145/3238147.3238199) | 2018 |
